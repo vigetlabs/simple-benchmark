@@ -35,7 +35,11 @@ While you can use this by itself, it's better to use it through the provided hel
         end
       end
 
-Calling `MyClass#do_a_thing` will log the execution to the configured log target.  If you want to disable logging altogether, simply set `SimpleBenchmark.enabled = false` in a global configuration file (e.g. `config/initializers/benchmarking.rb` if you're using it in a Rails app).
+Calling `MyClass#do_a_thing` will log the execution to the configured log target:
+
+    doing a thing: 1.000000045 second(s)
+
+If you want to disable logging altogether, simply set `SimpleBenchmark.enabled = false` in a global configuration file (e.g. `config/initializers/benchmarking.rb` if you're using it in a Rails app).
 
     
 
